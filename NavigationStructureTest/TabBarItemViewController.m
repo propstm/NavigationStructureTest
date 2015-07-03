@@ -55,6 +55,8 @@
         
     }
     
+    NSLog(@"FRAME OF TOP TABLEVIEW: %@", NSStringFromCGRect(self.topTableView.frame));
+    NSLog(@"FRAME OF BOTTOM TABLEVIEW: %@", NSStringFromCGRect(self.bottomTableview.frame));
 }
 
 - (void)viewWillAppear:(BOOL)animated{
