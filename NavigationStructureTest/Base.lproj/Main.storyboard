@@ -50,8 +50,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-9L-mHB">
-                                <rect key="frame" x="244" y="513" width="112" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-9L-mHB">
+                                <rect key="frame" x="244" y="522" width="112" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="fss-HK-NLm"/>
                                     <constraint firstAttribute="width" constant="112" id="pTr-K3-tWf"/>
@@ -60,19 +60,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CRI-Ic-ItU">
-                                <rect key="frame" x="0.0" y="65" width="600" height="440"/>
+                            <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CRI-Ic-ItU">
+                                <rect key="frame" x="0.0" y="110" width="600" height="404"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="dkg-5v-SSi" id="g2M-Ps-Km5"/>
                                     <outlet property="delegate" destination="dkg-5v-SSi" id="KGK-ix-fFP"/>
                                 </connections>
                             </tableView>
-                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WKx-n6-7Uv">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WKx-n6-7Uv">
+                                <rect key="frame" x="0.0" y="65" width="600" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="f8f-YA-kHK"/>
+                                    <constraint firstAttribute="height" constant="44" id="ZHj-5J-0fz"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="dkg-5v-SSi" id="dtr-is-IJy"/>
@@ -82,15 +82,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TBa-9L-mHB" firstAttribute="top" secondItem="CRI-Ic-ItU" secondAttribute="bottom" constant="8" symbolic="YES" id="27Z-CY-adb"/>
-                            <constraint firstItem="WKx-n6-7Uv" firstAttribute="top" secondItem="lPo-o8-jJh" secondAttribute="bottom" id="2Og-iv-TdR"/>
+                            <constraint firstItem="CRI-Ic-ItU" firstAttribute="top" secondItem="WKx-n6-7Uv" secondAttribute="bottom" constant="1" id="1BG-zA-XhM"/>
+                            <constraint firstItem="CRI-Ic-ItU" firstAttribute="centerX" secondItem="TBa-9L-mHB" secondAttribute="centerX" id="4jY-7L-hP8"/>
+                            <constraint firstItem="CRI-Ic-ItU" firstAttribute="trailing" secondItem="WKx-n6-7Uv" secondAttribute="trailing" id="9eB-rL-7hT"/>
+                            <constraint firstItem="WKx-n6-7Uv" firstAttribute="leading" secondItem="6M0-KJ-L3P" secondAttribute="leading" id="APh-ly-sLB"/>
                             <constraint firstItem="V1A-zV-W0Z" firstAttribute="top" secondItem="TBa-9L-mHB" secondAttribute="bottom" constant="8" symbolic="YES" id="HId-Yo-DLL"/>
-                            <constraint firstAttribute="trailing" secondItem="WKx-n6-7Uv" secondAttribute="trailing" id="UmT-mI-wH1"/>
-                            <constraint firstItem="CRI-Ic-ItU" firstAttribute="trailing" secondItem="WKx-n6-7Uv" secondAttribute="trailing" id="Vcp-NW-kUh"/>
-                            <constraint firstItem="CRI-Ic-ItU" firstAttribute="top" secondItem="WKx-n6-7Uv" secondAttribute="bottom" constant="1" id="XG8-MX-MpF"/>
-                            <constraint firstItem="WKx-n6-7Uv" firstAttribute="leading" secondItem="CRI-Ic-ItU" secondAttribute="leading" id="Xnc-G5-Kxl"/>
-                            <constraint firstItem="CRI-Ic-ItU" firstAttribute="leading" secondItem="6M0-KJ-L3P" secondAttribute="leading" id="cnS-6d-eFu"/>
-                            <constraint firstItem="CRI-Ic-ItU" firstAttribute="centerX" secondItem="TBa-9L-mHB" secondAttribute="centerX" id="fdk-hU-JTg"/>
+                            <constraint firstAttribute="trailing" secondItem="CRI-Ic-ItU" secondAttribute="trailing" id="PYo-a7-JvB"/>
+                            <constraint firstItem="WKx-n6-7Uv" firstAttribute="top" secondItem="lPo-o8-jJh" secondAttribute="bottom" constant="1" id="SKb-3w-t2q"/>
+                            <constraint firstItem="TBa-9L-mHB" firstAttribute="top" secondItem="CRI-Ic-ItU" secondAttribute="bottom" constant="8" symbolic="YES" id="dRA-Yv-mfY"/>
+                            <constraint firstItem="WKx-n6-7Uv" firstAttribute="leading" secondItem="CRI-Ic-ItU" secondAttribute="leading" id="fV4-yC-kV0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="N1L-Iu-0mx"/>
