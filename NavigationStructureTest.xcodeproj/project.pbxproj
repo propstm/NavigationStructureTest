@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08CB1BB41B4CF218001475BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CB1BB31B4CF218001475BE /* Main.storyboard */; };
 		90FE47251B46BF51006DD902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE47241B46BF51006DD902 /* main.m */; };
 		90FE47281B46BF51006DD902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE47271B46BF51006DD902 /* AppDelegate.m */; };
 		90FE472B1B46BF51006DD902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE472A1B46BF51006DD902 /* ViewController.m */; };
-		90FE472E1B46BF51006DD902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FE472C1B46BF51006DD902 /* Main.storyboard */; };
 		90FE47301B46BF51006DD902 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90FE472F1B46BF51006DD902 /* Images.xcassets */; };
 		90FE47331B46BF51006DD902 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FE47311B46BF51006DD902 /* LaunchScreen.xib */; };
 		90FE473F1B46BF51006DD902 /* NavigationStructureTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE473E1B46BF51006DD902 /* NavigationStructureTestTests.m */; };
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08CB1BB31B4CF218001475BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		90FE471F1B46BF51006DD902 /* NavigationStructureTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStructureTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FE47231B46BF51006DD902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90FE47241B46BF51006DD902 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		90FE47271B46BF51006DD902 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		90FE47291B46BF51006DD902 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		90FE472A1B46BF51006DD902 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		90FE472D1B46BF51006DD902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90FE472F1B46BF51006DD902 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90FE47321B46BF51006DD902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		90FE47381B46BF51006DD902 /* NavigationStructureTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStructureTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +88,8 @@
 				90FE47271B46BF51006DD902 /* AppDelegate.m */,
 				90FE47291B46BF51006DD902 /* ViewController.h */,
 				90FE472A1B46BF51006DD902 /* ViewController.m */,
-				90FE472C1B46BF51006DD902 /* Main.storyboard */,
 				90FE472F1B46BF51006DD902 /* Images.xcassets */,
+				08CB1BB31B4CF218001475BE /* Main.storyboard */,
 				90FE47311B46BF51006DD902 /* LaunchScreen.xib */,
 				90FE47221B46BF51006DD902 /* Supporting Files */,
 				90FE47481B46BF8D006DD902 /* TabBarItemViewController.h */,
@@ -204,7 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90FE472E1B46BF51006DD902 /* Main.storyboard in Resources */,
+				08CB1BB41B4CF218001475BE /* Main.storyboard in Resources */,
 				90FE47331B46BF51006DD902 /* LaunchScreen.xib in Resources */,
 				90FE47301B46BF51006DD902 /* Images.xcassets in Resources */,
 			);
@@ -250,14 +250,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		90FE472C1B46BF51006DD902 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90FE472D1B46BF51006DD902 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		90FE47311B46BF51006DD902 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,6 +414,7 @@
 				90FE47441B46BF51006DD902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90FE47451B46BF51006DD902 /* Build configuration list for PBXNativeTarget "NavigationStructureTestTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +423,7 @@
 				90FE47471B46BF51006DD902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
